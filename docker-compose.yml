@@ -10,3 +10,4 @@ services:
       - MQTT_pass="mqttpassword"
       - MQTT_topic="pool/phdata"
       - MQTT_clientID="ph803w2mqtt"
+      - LOGGING="off"
