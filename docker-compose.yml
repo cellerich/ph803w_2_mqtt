@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  ph803w2mqtt:
+    image: cellerich/ph803w2mqtt:0.0.4
+    restart: always
+    env:
+      - PH803W_IP=192.168.1.xxx
+      - MQTT_IP="192.168.1.xxx"
+      - MQTT_user="mqttusername"
+      - MQTT_pass="mqttpassword"
+      - MQTT_topic="pool/phdata"
+      - MQTT_clientID="ph803w2mqtt"
